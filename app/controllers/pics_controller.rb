@@ -3,8 +3,12 @@ class PicsController < ApplicationController
 		
 	end
 
+	def new
+		@pic = Pic.new
+	end
+
 	def create
-		
+		@pic = Pic.new(Pic_params)
 	end
 
 	def edit
@@ -17,5 +21,11 @@ class PicsController < ApplicationController
 
 	def destroy
 		
+	end
+
+	private 
+
+	def pic_params
+		params.require(:pic).permit(:title, :description)
 	end
 end
