@@ -1,5 +1,7 @@
 {
   "name": "Socialmedia_app",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "imagesloaded": "^4.1.3"
+  }
 }
